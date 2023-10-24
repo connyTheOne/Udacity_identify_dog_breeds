@@ -1,0 +1,77 @@
+input_args succsessful
+input_args succsessful
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+pet_label successful
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:          newfoundland_2396.jpg  label:               newfoundland
+ 2 key:           rottweiler_11564.jpg  label:                 rottweiler
+ 3 key:               vizsla_10249.jpg  label:                     vizsla
+ 4 key:       wolfhound_irish_1002.jpg  label:            wolfhound irish
+
+     MATCH:
+
+         newfoundland_2396.jpg: 
+Real:               newfoundland   Classifier: newfoundland, newfoundland dog
+
+          rottweiler_11564.jpg: 
+Real:                 rottweiler   Classifier:                     rottweiler
+
+              vizsla_10249.jpg: 
+Real:                     vizsla   Classifier:      vizsla, hungarian pointer
+
+ NOT A MATCH:
+
+      wolfhound_irish_1002.jpg: 
+Real:            wolfhound irish   Classifier:  scottish deerhound, deerhound
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+{'newfoundland_2396.jpg': ['newfoundland', 'newfoundland, newfoundland dog', 1, 1, 1], 'rottweiler_11564.jpg': ['rottweiler', 'rottweiler', 1, 1, 1], 'vizsla_10249.jpg': ['vizsla', 'vizsla, hungarian pointer', 1, 1, 1], 'wolfhound_irish_1002.jpg': ['wolfhound irish', 'scottish deerhound, deerhound', 0, 0, 1]}
+
+     MATCH:
+
+         newfoundland_2396.jpg: 
+Real:               newfoundland   Classifier: newfoundland, newfoundland dog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+          rottweiler_11564.jpg: 
+Real:                 rottweiler   Classifier:                     rottweiler  
+PetLabelDog: 1  ClassLabelDog: 1
+
+              vizsla_10249.jpg: 
+Real:                     vizsla   Classifier:      vizsla, hungarian pointer  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+      wolfhound_irish_1002.jpg: 
+Real:            wolfhound irish   Classifier:  scottish deerhound, deerhound  
+PetLabelDog: 0  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  3  N NotDog Images:  1 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  3  N NotDog Images:  1 
+Pct Corr dog: 100.0 Pct Corr NOTdog:   0.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   4
+N Dog Images        :   3
+N Not-Dog Images    :   1
+ 
+pct_match           : 75.000000 %
+pct_correct_dogs    : 100.000000 %
+pct_correct_breed   : 100.000000 %
+pct_correct_notdogs : 100.000000 %
+
+** Total Elapsed Runtime: 0:0:0
